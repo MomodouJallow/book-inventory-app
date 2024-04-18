@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ${DATABASE_URL_BOOKS_MOGA}
+    url: ${JALLOW_DB_URL}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
@@ -24,5 +24,5 @@ spring:
 application:
   security:
     jwt:
-      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
-      expiration: 86400000 # a day
+      secret-key: E635266556A586E3272357538782F413F4428472B4B6250645367566B5970404
+      expiration: 86400000
