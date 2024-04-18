@@ -5,9 +5,8 @@
 #EXPOSE 8080
 #ENTRYPOINT ["java","-jar","jallow-books.jar"]
 
-
 # Use a base image with Java and Maven installed
-FROM maven:3.8.4-openjdk-11 AS build
+FROM maven:3.8.4-openjdk-17 AS build
 
 # Set the working directory in the container
 WORKDIR /app
@@ -24,8 +23,8 @@ COPY src ./src
 # Build the application
 RUN mvn package
 
-# Use a base image with OpenJDK JRE installed
-FROM openjdk:11-jre-slim
+# Use a base image with OpenJDK JDK installed
+FROM openjdk:17-jdk-slim
 
 # Set the working directory in the container
 WORKDIR /app

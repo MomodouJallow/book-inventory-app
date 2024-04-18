@@ -15,7 +15,10 @@
 	<description>Books Backend is the server side implementation of the books management</description>
 	<properties>
 		<java.version>17</java.version>
+		<!-- Add the following property to specify the Java release version -->
+		<maven.compiler.release>17</maven.compiler.release>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
