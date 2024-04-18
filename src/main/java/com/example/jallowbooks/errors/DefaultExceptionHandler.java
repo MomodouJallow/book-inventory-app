@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 
 @ControllerAdvice
 public class DefaultExceptionHandler {
-    @ExceptionHandler(ResourceNotFoundException.class)
+    @ExceptionHandler(NotFound.class)
     public ResponseEntity<AppError> handleException(
-            ResourceNotFoundException e, HttpServletRequest request
+            NotFound e, HttpServletRequest request
     ) {
         AppError appError = new AppError(
                 request.getRequestURI(),
@@ -51,9 +51,9 @@ public class DefaultExceptionHandler {
         return new ResponseEntity<>(appError, HttpStatus.FORBIDDEN);
     }
 
-    @ExceptionHandler(BadRequestException.class)
+    @ExceptionHandler(BadRequest.class)
     public ResponseEntity<AppError> handleException(
-            BadRequestException e, HttpServletRequest request
+            BadRequest e, HttpServletRequest request
     ) {
         AppError appError = new AppError(
                 request.getRequestURI(),
@@ -64,10 +64,10 @@ public class DefaultExceptionHandler {
         return new ResponseEntity<>(appError, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(InternalServerErrorException.class)
+    @ExceptionHandler(InternalServerError.class)
 //    @ExceptionHandler(OpenApiC)
     public ResponseEntity<AppError> handleException(
-            InternalServerErrorException e, HttpServletRequest request
+            InternalServerError e, HttpServletRequest request
     ) {
         AppError appError = new AppError(
                 request.getRequestURI(),
