@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example.JallowBooks</groupId>
-	<artifactId>JallowBooks</artifactId>
+	<artifactId>jallow-books</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>security</name>
 	<description>Books Backend is the server side implementation of the books management</description>
