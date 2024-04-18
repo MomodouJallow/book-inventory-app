@@ -1,5 +1,7 @@
 # API Endpionts
 
+Access the Swagger Springfox documentation for this project by following this link [https://ai-books.onrender.com/swagger-ui/index.html](https://ai-books.onrender.com/swagger-ui/index.html).
+
 ### Get All Books
 
 - **URL**: `/api/v1/books/get-all`
