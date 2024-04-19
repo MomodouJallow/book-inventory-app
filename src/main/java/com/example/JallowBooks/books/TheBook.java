@@ -1,6 +1,6 @@
 package com.example.JallowBooks.books;
 
-import com.example.JallowBooks.authors.Author;
+import com.example.JallowBooks.theAuthors.Author;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
